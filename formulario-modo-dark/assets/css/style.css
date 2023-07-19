@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400&display=swap%27%29%3B');
+:root {
+    /*declarando variaves de cor*/
+    --color-light-50: #f8fafc;
+    /**/
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+    /**/
+    --color-blue-50: #3270cc;
+    --color-blue-100: #3a58df;
+    --color-blue-900: #2e3bb3;
+    /**/
+    --color-gradiente: linear-gradient(90deg, var(--color-blue-50), var(--color-blue-100), var(--color-blue-900));
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradiente);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login_form {
+    background-color: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    /*gap: mesmo espaçamento entre as divs*/
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+    animation: dark_to_light 0.3s ease-in-out;
+}
+
+#form_header {
+    display: flex;
+    align-items: center;
+    /*mexe na posiçao do login e mudança de modo*/
+    justify-content: space-between;
+}
+
+#form_header h1 {
+    font-size: 40px;
+    position: relative;
+}
+
+
+/*#form_header h1::before {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 3px;
+    background-color: var(--color-blue-50);
+    bottom: 10px;
+    border-radius: 5px;
+}*/
+
+#mode_icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#social_media {
+    display: flex;
+    justify-content: space-around;
+}
+
+#social_media img {
+    width: 35px;
+}
+
+#social_media img:hover {
+    transform: scale(1.2);
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#forgot_password a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--color-dark-50);
+}
+
+#forgot_password a:hover {
+    color: var(--color-blue-50);
+}
+
+#forgot_password {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#create {
+    color: var(--color-dark-50);
+    gap: 20px;
+    font-size: 14px;
+}
+
+#create a {
+    text-decoration: none;
+    color: var(--color-dark-50);
+}
+
+#create a:hover {
+    color: var(--color-blue-50);
+}
+
+#remeber-check {
+    font-size: 12px;
+}
+
+#login_button {
+    border: none;
+    background: var(--color-gradiente);
+    color: var(--color-light-50);
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login_button:hover {
+    transform: scale(1.05);
+}
+
+.logo_ref {
+    color: var(--color-dark-100);
+    padding-left: 27%;
+}
+
+.logo_ref a {
+    color: var(--color-dark-100);
+    text-decoration: none;
+}
+
+.logo_ref a:hover {
+    font-weight: bold;
+    color: var(--color-dark-900);
+}
+
+.input_box label {
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+
+.input_field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid var(--color-blue-50);
+}
+
+.input_field i {
+    font-size: 18px;
+    color: var(--color-dark-900);
+}
+
+.input_field input {
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.input_field input:focus {
+    outline: none;
+}
+
+.dark#login_form {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light_to_dark 0.3s ease-in-out;
+}
+
+.dark#login_form .input_field input,
+.dark#login_form .input_field i {
+    color: var(--color-light-50);
+}
+
+@keyframes dark_to_light {
+    0% {
+        background-color: var(--color-dark-100);
+    }
+    100% {
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light_to_dark {
+    0% {
+        background-color: var(--color-light-50);
+    }
+    100% {
+        background-color: var(--color-dark-100);
+    }
+}

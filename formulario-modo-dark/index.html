@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Login Dark/Light Mode</title>
+</head>
+
+<body>
+    <main id="container">
+        <form id="login_form">
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+
+            <div id="social_media">
+                <a href="#">
+                    <img id="theme-icon" src="assets/img/apple.png" alt="Apple Logo">
+                </a>
+
+                <a href="#">
+                    <img src="assets/img/google.png" alt="Google Logo">
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=qKWApkuhNu8&pp=ygUkbW9kbyBkYXJrIG11ZGFyIGRlIGljb25lIGh0bWwgY3NzIGpz">
+                    <img src="assets/img/youtube.png" alt="YouTube Logo">
+                </a>
+            </div>
+
+            <div id="inputs">
+                <div class="input_box">
+                    <label for="name">
+                        Nome
+                        <div class="input_field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input_box">
+                    <label for="email">
+                        E-mail
+                        <div class="input_field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input_box">
+                    <label for="password">
+                        Senha
+                        <div class="input_field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+
+                    <div id="forgot_password">
+                        <div id="remeber-check">
+                            <input type="checkbox" id="remeber" name="remeber">
+                            <label for="remeber"> Lembre de mim</label>
+                        </div>
+
+                        <a href="#">
+                            Esqueceu sua senha?
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="submit" id="login_button">
+                Login
+            </button>
+
+            <div id="create">
+                Não tem uma conta?
+                <a href="#">
+                    Inscreva-se
+                </a>
+            </div>
+        </form>
+
+    </main>
+
+    <div class="logo_ref">
+        <a target="_blank" href="https://icons8.com/icon/30840/apple-logo">IOS</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+        <a target="_blank" href="https://icons8.com/icon/yGcWL8copNNQ/facebook">Facebook</a> icon by <a target="_blank" href="https://icons8.com">Icons8 - </a>
+
+        <a target="_blank" href="https://icons8.com/icon/19318/youtube">YouTube</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
